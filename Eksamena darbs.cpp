@@ -93,3 +93,19 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
         nepareizi++;
     }
+       cout << "Kas ir teskta datnes? (Tris atbildes) " << endl << endl;//6. jautajums un atbildes.
+    cout << "A) Burtnica" << endl;
+    cout << "B) Datu kopa" << endl;
+    cout << "C) Notepad" << endl;
+    cout << "D) Tekstuals vai grafisks fails" << endl;
+    
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'b' || atbilde == 'B' || atbilde == 'd' || atbilde == 'D'|| atbilde == 'c' || atbilde == 'C')//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta mazo c, b, d vai lielo C, B, D  atbilde bus pareiza
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{
+        cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
+        nepareizi++;
+    }
