@@ -17,3 +17,14 @@ int main(){
     cout << "B) datne.open(datne.ios::open)" << endl;
     cout << "C) datne.open(datne.txt,ios::app); "<< endl;
     cout << "D) datne.open(datne.txt:app::open)" << endl;
+    
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'a' || atbilde == 'A' || atbilde == 'c' || atbilde == 'C')//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta  mazo a , c vai lielo A, C atbilde bus pareiza
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{ 
+        cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
+   		nepareizi++;
+   	}
