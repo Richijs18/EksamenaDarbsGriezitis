@@ -228,3 +228,83 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;
         nepareizi++;//pieskaita neigutos puntkus
     }
+       cout << "Kuri 2 kodi ir pareizi? " << endl << endl;//10. jautajums un atbildes.
+        
+     cout << "A) #include <iostream>" << endl;
+	cout <<"#include <fstream>" << endl;
+	cout << "using namespace std" << endl;
+	cout <<"int main(){" << endl;
+	cout <<"int i, k;    char b='A';" << endl;
+	cout <<"fstream datne;" << endl;
+	cout <<"datne.open(""burti.txt"",ios::out);" << endl;
+	cout <<"for(k=1; k<=25; k++){" << endl;
+		cout <<"for(i=0; i>k; i++){" << endl;
+		cout << "cout<<b;    datne.put(b);    //datne<<b;" << endl;
+	cout <<	"}" << endl;
+	cout << "cout<<""\n"";    datne<<""\n;""" << endl;
+	cout << "cout <<b=b+1;" << endl;
+	cout <<	"}" << endl;
+	cout << "datne.close();" << endl;
+	cout << "}" << endl;
+	
+    cout << "B) #include <iostream>" << endl;
+	cout <<"#include <fstream>" << endl;
+	cout << "using namespace std" << endl;
+	cout <<"int main(){" << endl;
+	cout <<"int i, k;    char b='A';" << endl;
+	cout <<"fstream datne;" << endl;
+	cout <<"datne.open(""burti.txt"",ios::out);" << endl;
+	cout <<"for(k=1; k<=26; k++){" << endl;
+		cout <<"for(i=0; i<k; i++){" << endl;
+		cout << "cout<<b;    datne.put(b);    //datne<<b;" << endl;
+	cout <<	"}" << endl;
+	cout << "cout<<""\n"";    datne<<""\n;""" << endl;
+	cout << "cout <<b=b+1;" << endl;
+	cout <<	"}" << endl;
+	cout << "datne.close();" << endl;
+	cout << "}" << endl;
+	
+    cout << "C) #include <ctime>" << endl;
+	cout <<"#include <fstream>" << endl;
+	cout << "using namespace std" << endl;
+	cout <<"int main(){" << endl;
+	cout <<"int b, n;    char v='A';" << endl;
+	cout <<"fstream datne;" << endl;
+	cout <<"datne.open(""burti.txt"",ios::out);" << endl;
+	cout <<"for(k=1; k<=26; k++){" << endl;
+		cout <<"for(i=0; i<k; i++){" << endl;
+		cout << "cout<<b;    datne.put(b);    //datne<<b;" << endl;
+	cout <<	"}" << endl;
+	cout << "cout<<""\n"";    datne<<""\n;""" << endl;
+	cout << "cout <<b=b+1;" << endl;
+	cout <<	"}" << endl;
+	cout << "datne.close();" << endl;
+	cout << "}" << endl;
+	
+    cout << "D) #include <iostream>" << endl;
+	cout <<"#include <fstream>" << endl;
+	cout << "using namespace std" << endl;
+	cout <<"int main(){" << endl;
+	cout <<"int m, l;    char b='A';" << endl;
+	cout <<"fstream datne;" << endl;
+	cout <<"datne.open(""burti.txt"",ios::app);" << endl;
+	cout <<"for(l=1; l<=26; l++){" << endl;
+		cout <<"for(m=0; m<l; m++){" << endl;
+		cout << "cout<<b;    datne.put(b);    //datne<<b;" << endl;
+	cout <<	"}" << endl;
+	cout << "cout<<""\n"";    datne<<""\n;""" << endl;
+	cout << "cout <<b=b+1;" << endl;
+	cout <<	"}" << endl;
+	cout << "datne.close();" << endl;
+	cout << "}" << endl;
+    
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'b' || atbilde == 'B' || atbilde == 'd' || atbilde == 'D')//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta mazo b, d vai lielo B, D  atbilde bus pareiza
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{
+        cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
+		nepareizi++;//pieskaita neigutos puntkus
+	}
