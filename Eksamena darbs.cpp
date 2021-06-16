@@ -45,3 +45,20 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
         nepareizi++;
     }
+      cout << "Ja gribetu izvadit teksta datnes ""sveiks"" kuri 2 veidi butu pareizi?" << endl << endl";//3. jautajums un atbildes.
+    cout << "A)string sveiki = sveiks; datne << sveiki; " << endl;
+    cout << "B) cout >> sveiki " << endl;
+    cout << "C) sveiks " << endl;
+    cout << "D) datne << sveiki; " << endl;
+    
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'a' || atbilde == 'A' || atbilde == 'd' || atbilde == 'D')//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta mazo a , d vai lielo A, D atbilde bus pareiza
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{        
+        cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
+        nepareizi++;
+    }
+    
