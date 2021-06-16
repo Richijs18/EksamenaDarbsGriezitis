@@ -45,7 +45,8 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
         nepareizi++;
     }
-      cout << "Ja gribetu izvadit teksta datnes ""sveiks"" kuri 2 veidi butu pareizi?" << endl << endl";//3. jautajums un atbildes.
+    cout<< endl;
+      cout << "Ja gribetu izvadit teksta datnes ""sveiks"" kuri 2 veidi butu pareizi?" << endl << endl;//3. jautajums un atbildes.
     cout << "A)string sveiki = sveiks; datne << sveiki; " << endl;
     cout << "B) cout >> sveiki " << endl;
     cout << "C) sveiks " << endl;
@@ -68,7 +69,7 @@ int main(){
     cout << "D)ofstream datne; " << endl;
     
     cin >> atbilde;//Nolasa atbildi.
-        if (atbilde == 'b' || atbilde == 'B' || atbilde == 'd' || atbilde == 'D'//Atbilzu varianti.
+        if (atbilde == 'b' || atbilde == 'B' || atbilde == 'd' || atbilde == 'D')//Atbilzu varianti.
         {
         cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta mazo b , d vai lielo B, D atbilde bus pareiza
         rezultats++;//pieksaita iegutuos punktus
@@ -109,3 +110,20 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
         nepareizi++;
     }
+         cout << "Pec ka var zinat kad tas ir teksta dantes? (Tris atbildes) " << endl << endl;//7. jautajums un atbildes.
+    cout << "A) Datnes varda" << endl;
+    cout << "B) Punkta" << endl;
+    cout << "C) Krasas" << endl;
+    cout << "D) Paplasinajuma" << endl;
+    
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'a' || atbilde == 'A' || atbilde == 'b' || atbilde == 'B'|| atbilde == 'd' || atbilde == 'D')//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta mazo a, b, d vai lielo A, B, D  atbilde bus pareiza
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{
+        cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
+        nepareizi++;
+    }
+}
