@@ -77,3 +77,19 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
         nepareizi++;
     }
+     cout << "Kuri 3 paplasinajumi der teksta datnem? " << endl << endl;//5. jautajums un atbildes.
+    cout << "A) .txt" << endl;
+    cout << "B) .rtf" << endl;
+    cout << "C) .zip" << endl;
+    cout << "D) .doc" << endl;
+    
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'b' || atbilde == 'B' || atbilde == 'd' || atbilde == 'D' || atbilde == 'a' || atbilde == 'A')//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta mazo a, b, d vai lielo A, B, D  atbilde bus pareiza
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{
+        cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
+        nepareizi++;
+    }
