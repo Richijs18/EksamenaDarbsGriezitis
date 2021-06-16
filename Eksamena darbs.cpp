@@ -61,4 +61,19 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
         nepareizi++;
     }
+         cout << "Kadas 2 komandas jaraksta lai saktu izmantotu arejas datnes?" << endl;//4. jautajums un atbildes.
+    cout << "A)#include <texttypes> " << endl;
+    cout << "B)#include <fstream> " << endl;
+    cout << "C)#include <ctime> " << endl;
+    cout << "D)ofstream datne; " << endl;
     
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'b' || atbilde == 'B' || atbilde == 'd' || atbilde == 'D'//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta mazo b , d vai lielo B, D atbilde bus pareiza
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{
+        cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
+        nepareizi++;
+    }
