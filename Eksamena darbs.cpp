@@ -126,4 +126,88 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
         nepareizi++;
     }
-}
+     cout << "Kuri 2 kodi ir pareizi? " << endl << endl;//8. jautajums un atbildes.
+        
+    cout << "A) #include <fstream>" <<endl;
+    cout <<"using namespace std;" <<endl;
+	cout <<"int main(){" <<endl;
+	cout <<	"int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};"<<endl;
+	cout <<"int datums, menesis=0;"<<endl;
+	cout <<"ifstream in;"<<endl;
+	cout <<"in.open(""diena.in"",ios::in);"<<endl;
+	cout <<"in>>datums;"<<endl;
+	cout <<"in.close();"<<endl;
+	cout <<"while(datums>a[menesis]){"<<endl;
+		cout <<"datums=datums-a[menesis];"<<endl;
+		cout <<"menesis=menesis+1;"<<endl;
+	cout << "}"<<endl;
+	cout <<"ofstream out;"<<endl;
+	cout <<"out.open(""diena.out"",ios::out);"<<endl;
+	cout <<"out<<datums<<" "<<menesis+1;"<<endl;
+	cout <<"out.close();"<<endl;
+ cout<<  "}" << endl;
+ 
+     cout << "B) #include <fstream>" <<endl;
+    cout <<"using namespace std;" <<endl;
+	cout <<"int main(){" <<endl;
+	cout <<	"int a[11]={31,28,31,30,31,30,31,31,30,31,30,31};"<<endl;
+	cout <<"int datums, menesis=0;"<<endl;
+	cout <<"ifstream in;"<<endl;
+	cout <<"in.open(""diena.in"",ios::in);"<<endl;
+	cout <<"in>>datums;"<<endl;
+	cout <<"in.close();"<<endl;
+	cout <<"while(datums>a[menesis]){"<<endl;
+		cout <<"datums=datums-a[menesis];"<<endl;
+		cout <<"menesis=menesis+1;"<<endl;
+	cout << "}"<<endl;
+	cout <<"ofstream out;"<<endl;
+	cout <<"out.open(""diena.out"",ios::out);"<<endl;
+	cout <<"out<<datums<<" "<<menesis+2;"<<endl;
+	cout <<"out.open();"<<endl;
+	
+    cout << "C) #include <fstream>" <<endl;
+    cout <<"using namespace std;" <<endl;
+	cout <<"int main(){" <<endl;
+	cout <<	"int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};"<<endl;
+	cout <<"int vecums, gads=0;"<<endl;
+	cout <<"ifstream out;"<<endl;
+	cout <<"in.open(""diena.in"",ios::in);"<<endl;
+	cout <<"in>>datums;"<<endl;
+	cout <<"in.close();"<<endl;
+	cout <<"while(datums>a[menesis]){"<<endl;
+		cout <<"datums=datums-a[menesis];"<<endl;
+		cout <<"menesis=menesis+1;"<<endl;
+	cout << "}"<<endl;
+	cout <<"ofstream out;"<<endl;
+	cout <<"out.open(""diena.out"",ios::out);"<<endl;
+	cout <<"out<<datums<<" "<<menesis+1;"<<endl;
+	cout <<"out.close();"<<endl;
+	
+     cout << "D) #include <fstream>" <<endl;
+    cout <<"using namespace std;" <<endl;
+	cout <<"int main(){" <<endl;
+	cout <<	"int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};"<<endl;
+	cout <<"int cipars, menesis=0;"<<endl;
+	cout <<"ifstream in;"<<endl;
+	cout <<"in.open(""diena.txt"",ios::app);"<<endl;
+	cout <<"in>>cipars;"<<endl;
+	cout <<"in.close();"<<endl;
+	cout <<"while(cipars>a[menesis]){"<<endl;
+		cout <<"cipars=cipars-a[menesis];"<<endl;
+		cout <<"menesis=menesis+1;"<<endl;
+	cout << "}"<<endl;
+	cout <<"ofstream out;"<<endl;
+	cout <<"out.open(""diena.out"",ios::out);"<<endl;
+	cout <<"out<<cipars<<" "<<menesis+1;"<<endl;
+	cout <<"out.close();"<<endl;
+    
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'a' || atbilde == 'A' || atbilde == 'd' || atbilde == 'D')//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta mazo a, d vai lielo A, D  atbilde bus pareiza
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{
+        cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
+        nepareizi++;
+    }
