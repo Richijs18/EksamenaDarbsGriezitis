@@ -308,3 +308,19 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
 		nepareizi++;//pieskaita neigutos puntkus
 	}
+	cout << endl;    
+cout << "Tu ieguvi " << rezultats << " no " << 10 << " punktiem! " << endl;//Saskaita rezultatu un pasaka tava gala punktus
+
+cout << endl;
+cout << "Paldies, kad piedalijies mana spele!";//Speles nobeigums, nospiezhot jebkuru pogu pec shi, spele beidzas.
+
+ofstream myfile;
+  myfile.open ("Rezultats.txt");//Faila nosaukums uz kuru jasuta informacija
+  myfile << "Pareizo atbilzu skaits - " << rezultats << endl;//Aizsuta informaciju .txt failam par pareizajam atbildem
+  myfile << "Nepareizo atbilzu skaits - " << nepareizi;//Aizsuta informaciju .txt failam par nepareizajam atbildem
+  myfile.close();//Aiztaisa failu ciet
+
+    return 0;//Lai nekas nesaglabajas 
+
+}
+
