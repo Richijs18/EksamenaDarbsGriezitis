@@ -26,7 +26,7 @@ int main(){
         }
         else{ 
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
-   		nepareizi++;
+   		nepareizi++;//pieskaita neigutos puntkus
    	}
    	cout << endl;
     cout << "Kuri paplasinajumi NEDER teksta datnem" << endl;//2. jautajums un atbildes.
@@ -43,7 +43,7 @@ int main(){
         }
         else{
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
-        nepareizi++;
+        nepareizi++;//pieskaita neigutos puntkus
     }
     cout<< endl;
       cout << "Ja gribetu izvadit teksta datnes ""sveiks"" kuri 2 veidi butu pareizi?" << endl << endl;//3. jautajums un atbildes.
@@ -60,7 +60,7 @@ int main(){
         }
         else{        
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
-        nepareizi++;
+        nepareizi++;//pieskaita neigutos puntkus
     }
          cout << "Kadas 2 komandas jaraksta lai saktu izmantotu arejas datnes?" << endl;//4. jautajums un atbildes.
     cout << "A)#include <texttypes> " << endl;
@@ -76,7 +76,7 @@ int main(){
         }
         else{
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
-        nepareizi++;
+        nepareizi++;//pieskaita neigutos puntkus
     }
      cout << "Kuri 3 paplasinajumi der teksta datnem? " << endl << endl;//5. jautajums un atbildes.
     cout << "A) .txt" << endl;
@@ -92,7 +92,7 @@ int main(){
         }
         else{
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
-        nepareizi++;
+        nepareizi++;//pieskaita neigutos puntkus
     }
        cout << "Kas ir teskta datnes? (Tris atbildes) " << endl << endl;//6. jautajums un atbildes.
     cout << "A) Burtnica" << endl;
@@ -108,7 +108,7 @@ int main(){
         }
         else{
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
-        nepareizi++;
+        nepareizi++;//pieskaita neigutos puntkus
     }
          cout << "Pec ka var zinat kad tas ir teksta dantes? (Tris atbildes) " << endl << endl;//7. jautajums un atbildes.
     cout << "A) Datnes varda" << endl;
@@ -124,7 +124,7 @@ int main(){
         }
         else{
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
-        nepareizi++;
+        nepareizi++;//pieskaita neigutos puntkus
     }
      cout << "Kuri 2 kodi ir pareizi? " << endl << endl;//8. jautajums un atbildes.
         
@@ -209,5 +209,22 @@ int main(){
         }
         else{
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
-        nepareizi++;
+        nepareizi++;//pieskaita neigutos puntkus
+    }
+     cout << "Kapec svarigi ir zinat faila extension? (Divas atbildes) " << endl << endl;//9. jautajums un atbildes.
+        
+    cout << "A) Fails var neatbalstit tadu veidu un nestradat pareizi " << endl;
+    cout << "B) Vieglak orienteties ja ikona ir pareiza" << endl;
+    cout << "C) Smukak izstas" << endl;
+    cout << "D) Visi ir pareizi" << endl;
+    
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'a' || atbilde == 'A' || atbilde == 'b' || atbilde == 'B')//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{   
+        cout << "Tava atbilde bija nepareiza!" << endl;
+        nepareizi++;//pieskaita neigutos puntkus
     }
