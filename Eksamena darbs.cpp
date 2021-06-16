@@ -28,3 +28,20 @@ int main(){
         cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
    		nepareizi++;
    	}
+   	cout << endl;
+    cout << "Kuri paplasinajumi NEDER teksta datnem" << endl;//2. jautajums un atbildes.
+    cout << "A) .doc"<< endl;
+    cout << "B) .exe << " << endl;
+    cout << "C) .wav >>" << endl;
+    cout << "D) .jpg >>" << endl;
+
+    cin >> atbilde;//Nolasa atbildi.
+        if (atbilde == 'b' || atbilde == 'B' || atbilde == 'c' || atbilde == 'C'|| atbilde == 'd' || atbilde == 'D')//Atbilzu varianti.
+        {
+        cout << "Tava atbilde bija pareiza!" << endl;//Ja uzraksta mazo b , c vai lielo B, C atbilde bus pareiza
+        rezultats++;//pieksaita iegutuos punktus
+        }
+        else{
+        cout << "Tava atbilde bija nepareiza!" << endl;// Uzraksta ko citu atbilde nebus pareiza
+        nepareizi++;
+    }
